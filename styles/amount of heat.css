@@ -1,0 +1,17 @@
+.not-enough-data {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: -2px;
+    margin-left: 5px;
+}
+.error {
+    color: #9F1420;
+}
+.specific {
+    background-color: inherit;
+    border: black 0.5px solid;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 20px;
+    margin-left: -5px;
+}

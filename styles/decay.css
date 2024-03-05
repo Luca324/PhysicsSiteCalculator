@@ -1,0 +1,86 @@
+#arrow {
+    margin-left: 17px;
+    margin-right: 17px;
+}
+
+.enter-known-values {
+    margin-bottom: 25px;
+}
+
+/* beta decay for e with 2 indexes*/
+.electron span {
+    display: inline-block;
+}
+
+.electron {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.electron sup,
+.electron sub {
+    display: block;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+    font-size: 12px;
+}
+
+.electron sup {
+    top: -0.6em;
+}
+
+.electron sub {
+    top: 0.4em;
+}
+
+.electron {
+    padding-right: 8px;
+}
+
+.abstract-element {
+    padding-right: 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.index {
+    width: 40px;
+    height: 14px;
+    border: 1px solid #1F3439;
+    font-size: 12px;
+    padding: 0px;
+}
+
+.element {
+    width: 37px;
+    height: 27px;
+    border: 1px solid #1F3439;
+}
+
+select {
+    background-color: inherit;
+    border: none;
+}
+
+.index input {
+    padding: 0;
+    border: none;
+    background-color: inherit;
+    width: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+
+.selectelement {
+    font-size: 15px;
+}
+
+.not-enough-data {
+    margin-top: 10px;
+}
+.H-1, .Z-bigger-A {
+    color: #9F1420;
+}

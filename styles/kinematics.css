@@ -1,0 +1,13 @@
+select {
+    font-family: inherit;
+    font-size: 16px;
+    background-color: inherit;
+    margin-top: 5px;
+}
+
+.not-enough-data {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: -2px;
+    margin-left: 5px;
+}

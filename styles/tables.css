@@ -1,0 +1,80 @@
+body {
+    width: auto;
+}
+
+.workon {
+    margin-left: 0;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#basic-physical-quantities {
+    width: 95%;
+    max-width: 700px;
+    font-size: min(1.6vw, 13px);
+}
+
+#decimal-prefixes {
+    border-collapse: collapse;
+    width: 95%;
+    max-width: 500px;
+    font-size: 12px;
+}
+
+#basic-physical-constants {
+    font-size: min(1.6vw, 13px);
+}
+
+table th {
+    background-color: #1F3439;
+    color: #FAF6EB;
+    border: 1px #5B5B5B solid;
+    font-weight: 100;
+    padding: 4px;
+}
+
+table td {
+    border: 1px #5B5B5B solid;
+    background-color: white;
+    vertical-align: bottom;
+    padding: 4px;
+}
+
+.align-left {
+    text-align: left;
+}
+
+html {
+    width: 100vw;
+    /*чтобы размер не подстраивался под содержимое*/
+}
+
+body {
+    display: inline-block;
+    width: inherit;
+}
+
+header {
+    width: inherit;
+    display: inline-block;
+}
+
+#content {
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#heading {
+    max-width: 80vw;
+}
+
+h1 {
+    font-size: min(22px, 5vw);
+}

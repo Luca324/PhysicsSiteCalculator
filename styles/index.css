@@ -1,0 +1,220 @@
+body {
+    font-family: Jura;
+    color: #1F3439;
+    font-style: normal;
+    line-height: normal;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #FAF6EB;
+    display: inline-block;
+    border-radius: 17px;
+    padding: 4px 9px;
+}
+
+a[href="about us.html"] {
+    padding-left: 0;
+}
+
+a:hover {
+    background: #D9D9D9;
+    color: #1F3439;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}
+
+h1 {
+    text-align: right;
+    padding-right: 10px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 26px;
+}
+/* h2:first-child {
+    margin-top: 46px;
+} */
+
+h3 {
+    /* heading in menu */
+    color: #FAF6EB;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h4 {
+    color: rgba(250, 246, 235, 0.50);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+li {
+    list-style: none;
+}
+
+/* сброс стилей */
+button {
+    background: inherit;
+    border-style: none;
+    padding: 0;
+    text-transform: none;
+    overflow: visible;
+    margin: 0;
+}
+
+#svgbutton {
+    position: absolute;
+    top: 20px;
+    left: 23px;
+}
+
+#menulist {
+    margin-top: 60px;
+}
+
+.list {
+    border-left: 1px solid rgba(250, 246, 235, 0.50);
+}
+
+ul {
+    padding: 0;
+}
+
+.list li {
+    margin-left: 20px;
+}
+
+header {
+    height: 44px;
+}
+
+#heading {
+    display: inline-block;
+    float: right;
+    margin-top: 18px;
+    margin-right: 20px;
+}
+
+#inputform input {
+    overflow: visible;
+    margin: 0;
+    font-size: 20px;
+    font-weight: inherit;
+    padding: 0;
+    border: 0.75px solid #1F3439;
+    background: #FAF6EB;
+    min-width: 34px;
+    width: 34px;
+}
+
+#content {
+    width: 370px;
+    margin: auto;
+    padding-left: 23px;
+    padding-right: 23px;
+}
+
+#main {
+    overflow: hidden;
+    height: 0;
+    padding: 0 15px;
+}
+
+#menu {
+    background: #1F3439;
+    position: absolute;
+    color: #FFF;
+    overflow: hidden;
+}
+
+.menuoff {
+    display: none;
+}
+
+.bodymenu {
+    background: #1F3439;
+}
+
+.bodywork {
+    background: #FAF6EB;
+    
+    padding-bottom: 100px;
+}
+
+.svgbuttonwork {
+    fill: #1F3439;
+}
+
+/* кнопки очистить и Посчитать */
+#btns {
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#btns button {
+    width: 140px;
+    height: 34px;
+    border-radius: 19px;
+    color: white;
+    font-size: 16px;
+    font-family: Jura;
+}
+
+#calculate {
+    background: #7F9049;
+    margin: 0 15px;
+}
+
+#clear {
+    background: #1F3439;
+}
+
+#inputform td {
+    padding: 4px 3px;
+}
+
+#inputforn .input,
+.input-buffer {
+    letter-spacing: 0.2em;
+}
+
+.input-buffer {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    visibility: hidden;
+    white-space: nowrap;
+}
+
+#formulas td {
+    text-align: center;
+}
+
+#formulas {
+    padding: 15px 0 0 15px;
+}
+
+.property-name {
+    font-size: 20px;
+}
+
+.property-equal {
+    font-size: 24px;
+}
+
+.off {
+    border: 1px solid green;
+}
