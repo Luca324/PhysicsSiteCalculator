@@ -43,14 +43,14 @@ $(document).ready(function () {
 
         step = 0 //для этапа разработки, если код зациклится
 
-{if ($('#x0').val() !== '') { x0 = Number($('#x0').val()) } else { x0 = '' } // проверка нужна для того,
+        {if ($('#x0').val() !== '') { x0 = Number($('#x0').val().replace(',', '.')) } else { x0 = '' } // проверка нужна для того,
         //чтобы Number() не превратила '' в 0.
-        if ($('#x').val() !== '') { x = Number($('#x').val()) } else { x = '' }
-        if ($('#v').val() !== '') { v = Number($('#v').val()) } else { v = '' }
-        if ($('#v0').val() !== '') { v0 = Number($('#v0').val()) } else { v0 = '' }
-        if ($('#a').val() !== '') { a = Number($('#a').val()) } else { a = '' }//потом в конце calculate наоборот
-        if ($('#t').val() !== '') { t = Number($('#t').val()) } else { t = '' }
-        if ($('#s').val() !== '') { s = Number($('#s').val()) } else { s = '' }
+        if ($('#x').val() !== '') { x = Number($('#x').val().replace(',', '.')) } else { x = '' }
+        if ($('#v').val() !== '') { v = Number($('#v').val().replace(',', '.')) } else { v = '' }
+        if ($('#v0').val() !== '') { v0 = Number($('#v0').val().replace(',', '.')) } else { v0 = '' }
+        if ($('#a').val() !== '') { a = Number($('#a').val().replace(',', '.')) } else { a = '' }//потом в конце calculate наоборот
+        if ($('#t').val() !== '') { t = Number($('#t').val().replace(',', '.')) } else { t = '' }
+        if ($('#s').val() !== '') { s = Number($('#s').val().replace(',', '.')) } else { s = '' }
 }
 
         while (counter !== 0, step < 10) {
