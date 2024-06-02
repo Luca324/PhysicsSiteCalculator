@@ -6,7 +6,7 @@ body {
     margin: 0;
 }
 
-a {
+#menu a {
     text-decoration: none;
     color: #FAF6EB;
     display: inline-block;
@@ -14,11 +14,7 @@ a {
     padding: 4px 9px;
 }
 
-a[href="about us.html"] {
-    padding-left: 0;
-}
-
-a:hover {
+#menu a:hover {
     background: #D9D9D9;
     color: #1F3439;
 }
@@ -42,9 +38,6 @@ h2 {
     font-weight: 400;
     margin-top: 26px;
 }
-/* h2:first-child {
-    margin-top: 46px;
-} */
 
 h3 {
     /* heading in menu */
@@ -73,11 +66,6 @@ button {
     margin: 0;
 }
 
-#svgbutton {
-    position: absolute;
-    top: 20px;
-    left: 23px;
-}
 
 #menulist {
     margin-top: 60px;
@@ -133,9 +121,9 @@ header {
 
 #menu {
     background: #1F3439;
-    position: absolute;
     color: #FFF;
     overflow: hidden;
+    min-height: 100vh;
 }
 
 .menuoff {
@@ -148,8 +136,10 @@ header {
 
 .bodywork {
     background: #FAF6EB;
-    
-    padding-bottom: 100px;
+}
+#work {
+    min-height: calc(100vh - 100px);
+    padding-bottom: 20px;
 }
 
 .svgbuttonwork {
@@ -177,10 +167,16 @@ header {
     background: #7F9049;
     margin: 0 15px;
 }
-
-#clear {
-    background: #1F3439;
+#calculate:hover, #calculate:active {
+    background: #99aa62;
 }
+#clear {
+    background: #333333;
+}
+#clear:hover, #clear:active {
+    background: #656565;
+}
+
 
 #inputform td {
     padding: 4px 3px;
@@ -218,3 +214,251 @@ header {
 .off {
     border: 1px solid green;
 }
+#menubutton {
+    position: absolute;
+    top: 20px;
+    left: 23px;
+}
+
+#inner {  /* this contains three lines */
+    position: relative; /* to lines with position: absolute; displayed correctly */
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+#inner .line {
+    position: absolute;
+    opacity: 1; /* nontransparant */
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+    --animation-duration: 0.3s;
+}
+#inner:hover .line {
+   background-color: #6c6c6c;
+}
+#inner.active:hover .line {
+   background-color: #d3d0c5;
+}
+#inner.disactive .line {
+    animation-duration: var(--animation-duration);
+}
+
+#inner.disactive .line1 {
+    animation-name: line1disactive;
+}
+
+#inner.disactive .line2 {
+    animation-name: line2disactive;
+    animation-duration: var(--animation-duration);
+}
+
+#inner.disactive .line3 {
+    animation-name: line3disactive;
+}
+
+#menubutton .line1 {
+    top: 0px;
+}
+
+#menubutton .line2 {
+    top: 9px;
+}
+
+#menubutton .line3 {
+    top: 18px;
+}
+
+#inner.active .line {
+    background-color: #FAF6EB;
+}
+
+#inner.active .line1 {
+    animation-duration: var(--animation-duration);
+    animation-name: line1active;
+    top: 9px;
+    transform: rotate(45deg);
+
+}
+
+#inner.active .line2 {
+    animation-duration: var(--animation-duration);
+    animation-name: line2active;
+    opacity: 0;
+}
+
+#inner.active .line3 {
+    animation-duration: var(--animation-duration);
+    animation-name: line3active;
+    top: 9px;
+    transform: rotate(-45deg);
+}
+
+@keyframes line1active {
+    from {
+        top: 0px;
+        transform: rotate(0deg);
+        background-color: #000;
+    }
+
+    50% {
+        top: 9px;
+        transform: rotate(0deg);
+    }
+
+    to {
+        top: 9px;
+        transform: rotate(45deg);
+        background-color: #FAF6EB;
+    }
+}
+
+@keyframes line1disactive {
+    from {
+        top: 9px;
+        transform: rotate(45deg);
+        background-color: #FAF6EB;
+    }
+
+    50% {
+        top: 9px;
+        transform: rotate(0deg);
+    }
+
+    to {
+
+        top: 0px;
+        transform: rotate(0deg);
+        background-color: #000;
+    }
+}
+
+@keyframes line2active {
+    from {
+        opacity: 1;
+        background-color: #000;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    51% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0;
+        background-color: #FAF6EB;
+    }
+}
+
+
+@keyframes line2disactive {
+    from {
+        opacity: 0;
+        background-color: #FAF6EB;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    51% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 1;
+        background-color: #000;
+    }
+}
+
+@keyframes line3active {
+    from {
+        top: 18px;
+        transform: rotate(0deg);
+        background-color: #000;
+    }
+
+    50% {
+        top: 9px;
+        transform: rotate(0deg);
+    }
+
+    to {
+        top: 9px;
+        transform: rotate(-45deg);
+        background-color: #FAF6EB;
+    }
+}
+
+@keyframes line3disactive {
+    from {
+        top: 9px;
+        transform: rotate(-45deg);
+        background-color: #FAF6EB;
+    }
+
+    50% {
+        top: 9px;
+        transform: rotate(0deg);
+    }
+
+    to {
+        top: 18px;
+        transform: rotate(0deg);
+        background-color: #000;
+    }
+}
+a, #calculate, #clear {
+    transition: color 0.1s ease-in-out, background-color 0.1s ease-in-out;
+}
+
+
+footer {
+	/* background-color: #2c3e50; */
+	background-color: #1F3439;
+	padding: 20px 6px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 14px;
+	color: #959fa8;
+	border-top: 1px solid #4b5055;
+	/* position: revert-layer; */
+	/* bottom: 0; */
+	/* left: 0; */
+	/* width: 100%; */
+}
+
+footer span.top {
+	width: 100%;
+	margin-bottom: 14px;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer p {
+	max-width: 495px;
+	margin: 0 auto;
+	text-align: justify;
+}
+
+footer a {
+	color: #959fa8;
+	width: 58px;
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	text-decoration: none;
+	margin-left: 40px;
+}
+
+ footer img {
+	height: 20px;
+ }
